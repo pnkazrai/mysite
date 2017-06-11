@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Djong Music Poll</title>
+</head>
+<body>
+
+    <ul>
+        {% for x in album %}
+        <li><a href="/polls/{{x.id}}" >{{x.album_title}}</a></li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

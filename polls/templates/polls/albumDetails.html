@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{album.album_title}}</title>
+</head>
+<body>
+    <h2>You selected album </h2>
+     <ul>
+        {% for x in album %}
+         <li><a href="{% url 'polls:detail' x.id %}">{{ x.album_title }}</a></li>﻿
+        {% endfor %}
+
+    </ul>
+
+    <hr />
+
+    <form action="" method="post">
+        <ol>
+        {% for x in album %}
+         <label></label>
+         <input type="radio" />
+        {% endfor %}
+
+    </ol>
+    </form>
+
+</body>
+</html>
