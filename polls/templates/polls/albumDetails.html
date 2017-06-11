@@ -18,8 +18,9 @@
     <form action="" method="post">
         <ol>
         {% for x in album %}
-         <label></label>
-         <input type="radio" />
+            <input type="radio" />
+            <label>{{ x.album_title }}</label>
+
         {% endfor %}
 
     </ol>
